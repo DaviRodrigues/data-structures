@@ -1,11 +1,10 @@
-
-# 📚 Plano de Estudos: Entendendo Algoritmos (Grokking Algorithms)
+# Plano de Estudos: Entendendo Algoritmos (Grokking Algorithms)
 
 > **Livro Base:** _Entendendo Algoritmos - Um Guia Ilustrado Para Programadores e Outros Curiosos_ (Aditya Y. Bhargava)
 
 ---
 
-## 🎯 Metodologia de Aprendizado (Papel do Professor)
+## Metodologia de Aprendizado (Papel do Professor)
 
 Em cada etapa da nossa jornada, atuarei como seu professor e mentor técnico, seguindo o ciclo pedagógico:
 
@@ -17,7 +16,7 @@ Em cada etapa da nossa jornada, atuarei como seu professor e mentor técnico, se
 
 ---
 
-## 🗺️ Mapa da Jornada em 5 Módulos
+## Mapa da Jornada em 5 Módulos
 
 ```mermaid
 graph TD
@@ -29,9 +28,9 @@ graph TD
 
 ---
 
-## 📖 Módulo 1: Fundamentos, Complexidade e Estruturas Básicas
+## Módulo 1: Fundamentos, Complexidade e Estruturas Básicas
 
-### 📌 Etapa 1: Introdução a Algoritmos e Complexidade (Capítulo 1)
+### Etapa 1: Introdução a Algoritmos e Complexidade (Capítulo 1)
 
 - **Tópicos:**
   - O que são algoritmos e por que eficiência importa.
@@ -43,7 +42,7 @@ graph TD
   - Implementar o algoritmo de Busca Binária iterativo.
   - Simular e comparar o número de operações entre busca linear e binária.
 
-### 📌 Etapa 2: Gerenciamento de Memória e Ordenação por Seleção (Capítulo 2)
+### Etapa 2: Gerenciamento de Memória e Ordenação por Seleção (Capítulo 2)
 
 - **Tópicos:**
   - Como a memória do computador funciona (gavetas de memória).
@@ -55,7 +54,7 @@ graph TD
   - Implementar uma Lista Encadeada simples.
   - Implementar o _Selection Sort_ encontrando o menor elemento iterativamente.
 
-### 📌 Etapa 3: Recursão e a Pilha de Chamadas (Capítulo 3)
+### Etapa 3: Recursão e a Pilha de Chamadas (Capítulo 3)
 
 - **Tópicos:**
   - O que é recursão e como evitar loops infinitos.
@@ -68,9 +67,9 @@ graph TD
 
 ---
 
-## ⚡ Módulo 2: Dividir para Conquistar e Tabelas Hash
+## Módulo 2: Dividir para Conquistar e Tabelas Hash
 
-### 📌 Etapa 4: Dividir para Conquistar e Quicksort (Capítulo 4)
+### Etapa 4: Dividir para Conquistar e Quicksort (Capítulo 4)
 
 - **Tópicos:**
   - A estratégia _Dividir para Conquistar_ (D&C - _Divide and Conquer_).
@@ -82,7 +81,7 @@ graph TD
   - Resolver problemas de soma recursiva e contagem de elementos usando D&C.
   - Implementar o _Quicksort_ completo.
 
-### 📌 Etapa 5: Tabelas Hash (Capítulo 5)
+### Etapa 5: Tabelas Hash (Capítulo 5)
 
 - **Tópicos:**
   - O que são Funções Hash (_Hash Functions_) e Tabelas Hash (_Hash Tables_ / Dicionários / Mapas).
@@ -95,9 +94,9 @@ graph TD
 
 ---
 
-## 🌐 Módulo 3: Grafos e Algoritmos de Menor Caminho
+## Módulo 3: Grafos e Algoritmos de Menor Caminho
 
-### 📌 Etapa 6: Pesquisa em Largura - BFS (Capítulo 6)
+### Etapa 6: Pesquisa em Largura - BFS (Capítulo 6)
 
 - **Tópicos:**
   - O que são Grafos (Vértices e Arestas, Grafos direcionados vs. não direcionados).
@@ -109,7 +108,7 @@ graph TD
   - Representar grafos usando tabelas hash / listas de adjacência.
   - Implementar BFS para encontrar conexões mais curtas em uma rede.
 
-### 📌 Etapa 7: Algoritmo de Dijkstra (Capítulo 7)
+### Etapa 7: Algoritmo de Dijkstra (Capítulo 7)
 
 - **Tópicos:**
   - Grafos ponderados (_Weighted Graphs_) vs. não ponderados.
@@ -122,9 +121,9 @@ graph TD
 
 ---
 
-## 🧩 Módulo 4: Otimização, Aproximação e Programação Dinâmica
+## Módulo 4: Otimização, Aproximação e Programação Dinâmica
 
-### 📌 Etapa 8: Algoritmos Gulosos e Problemas NP-Completos (Capítulo 8)
+### Etapa 8: Algoritmos Gulosos e Problemas NP-Completos (Capítulo 8)
 
 - **Tópicos:**
   - A estratégia Gulosa (_Greedy Strategy_): escolhas ótimas locais.
@@ -135,7 +134,7 @@ graph TD
 - **Prática:**
   - Implementar o algoritmo guloso de aproximação para cobertura de estações de rádio.
 
-### 📌 Etapa 9: Programação Dinâmica (Capítulo 9)
+### Etapa 9: Programação Dinâmica (Capítulo 9)
 
 - **Tópicos:**
   - O que é Programação Dinâmica (DP) e como funciona a abordagem por tabelas (_grid_).
@@ -148,9 +147,9 @@ graph TD
 
 ---
 
-## 🤖 Módulo 5: Machine Learning, Big Data e Além
+## Módulo 5: Machine Learning, Big Data e Além
 
-### 📌 Etapa 10: K-Vizinhos Mais Próximos - KNN (Capítulo 10)
+### Etapa 10: K-Vizinhos Mais Próximos - KNN (Capítulo 10)
 
 - **Tópicos:**
   - Algoritmo $K$-Nearest Neighbors ($K$-NN).
@@ -161,7 +160,7 @@ graph TD
 - **Prática:**
   - Implementar o cálculo de distância Euclidiana e um classificador / recomendador simples de $K$-NN.
 
-### 📌 Etapa 11: Próximos Passos & Tecnologias do Mundo Real (Capítulo 11)
+### Etapa 11: Próximos Passos & Tecnologias do Mundo Real (Capítulo 11)
 
 - **Tópicos:**
   - **Árvores:** Árvores Binárias de Busca (_BST_), B-Trees e Índices de Banco de Dados.
@@ -173,15 +172,3 @@ graph TD
   - **Programação Linear:** Otimização com restrições (Simplex).
 - **Prática:**
   - Explorar uma árvore binária de busca simples e testar um filtro de Bloom.
-
----
-
-## 🚀 Como Vamos Proceder
-
-Para começar a primeira aula:
-
-1. Começaremos pelo **Módulo 1 - Etapa 1 (Capítulo 1: Introdução a Algoritmos, Pesquisa Binária e Big O)**.
-2. Explicarei os conceitos de forma didática e visual.
-3. Faremos o código juntos e realizaremos exercícios para garantir que você dominou a matéria.
-
-Quando estiver pronto, basta me avisar para iniciarmos a **Etapa 1**!
