@@ -25,11 +25,24 @@
 | **Módulo 2** | Cap. 4: Quicksort & D&C           |     ✅ Concluído     | Dividir para Conquistar, escolha do pivô, ordenação _in-place_    |
 | **Módulo 2** | Cap. 5: Tabelas Hash              |     ✅ Concluído     | Função hash, buckets, colisões, fator de carga e _Two Sum_ $O(n)$ |
 | **Módulo 3** | Cap. 6: Pesquisa em Largura (BFS) | ⏳ Pronto p/ iniciar | Grafos não ponderados, filas (FIFO), menor rota                   |
+| **Módulo 3** | Cap. 6: Pesquisa em Largura (BFS) | 🔄 Em Andamento      | Grafos não ponderados, filas (FIFO), menor rota, $O(V + E)$       |
 | **Módulo 3** | Cap. 7: Algoritmo de Dijkstra     | ⏳ Pronto p/ iniciar | Grafos ponderados, tabelas de custo e menor caminho               |
 
 ---
 
 ## 📝 Diário de Bordo / Registro de Sessões
+
+### 📅 Sessão: Módulo 3 - Capítulo 6 (Grafos e Pesquisa em Largura - BFS)
+
+- **Conceitos & Intuição:**
+  - Modelação de Grafos direcionados e não-direcionados utilizando Dicionários / Tabelas Hash (Listas de Adjacência).
+  - Uso de Fila FIFO (`collections.deque`) para garantir a exploração em camadas de proximidade (1º grau, 2º grau, etc.) e encontrar o menor caminho em número de arestas.
+  - Prevenção de ciclos e loops infinitos usando conjunto (`set`) de visitados com checagem em $O(1)$.
+- **Análise Crítica do Estudante:**
+  - **Percepção de Complexidade $O(V + E)$:** Notou corretamente que, apesar de existirem dois loops (o `while` que consome a fila e o `for` que itera sobre os vizinhos), a complexidade **não** é multiplicativa $O(n^2)$. Como o conjunto de visitados impede repetições, cada nó é processado uma vez e cada aresta é percorrida uma vez, resultando na soma linear de vértices e arestas $O(V + E)$.
+  - **Evolução em Ferramentas:** Utilização ativa do depurador (_debugger_) para inspecionar o estado da fila, caminhos e variáveis a cada iteração do algoritmo.
+
+---
 
 ### 📅 Sessão: Módulo 2 - Capítulo 4 (Quicksort & D&C)
 
@@ -68,8 +81,14 @@
 1. **Intuição de Otimização:** Percebeu rapidamente quando um algoritmo poderia ser simplificado para uma única passada ($O(n)$).
 2. **Postura Investigativa:** Uso ativo de depuração e testes passo a passo para validar a lógica das estruturas de dados.
 3. **Compreensão de Mecânica de Baixo Nível:** Boa clareza sobre alocação de memória, call stack e custo de recursão.
+1. **Análise de Complexidade Estruturada:** Compreendeu a diferença entre complexidade aninhada $O(n^2)$ e complexidade agregada em grafos $O(V + E)$, onde estruturas de apoio (`set`) evitam reprocessamento.
+2. **Intuição de Otimização:** Percebeu rapidamente quando um algoritmo poderia ser simplificado para uma única passada ($O(n)$).
+3. **Postura Investigativa & Depuração:** Uso ativo de depuração passo a passo com _debugger_ para rastrear a mutação de estado e ponteiros.
+4. **Compreensão de Mecânica de Baixo Nível:** Boa clareza sobre alocação de memória, call stack e custo de recursão.
 
 ### 🎯 Dicas & Recomendações para os Próximos Módulos:
 
 - **Padrão de Mapeamento Invertido:** Sempre que um problema exigir encontrar pares, complementos ou verificar ocorrências passadas em $O(1)$, lembre-se do padrão de mapear `dado -> índice` em vez de `índice -> dado`.
 - **Grafos no Módulo 3:** Ao iniciar BFS, preste bastante atenção na escolha da estrutura de dados: Filas (`collections.deque` com `popleft()`) garantem $O(1)$ na remoção do início, enquanto listas normais em Python fariam $O(n)$ no `pop(0)`.
+- **Depuração de APIs e Sistemas Assíncronos:** Em servidores web e APIs, lembre-se de que os _breakpoints_ funcionam sob demanda. A aplicação inicia, fica em estado de escuta (_listening_), e a pausa do depurador só é disparada quando a rota específica recebe uma requisição HTTP.
+- **Transição de BFS para Dijkstra (Cap. 7):** O BFS encontra o menor caminho contando apenas o **número de arestas** (todos os passos têm peso 1). No Capítulo 7 (Dijkstra), aprenderemos o que fazer quando as arestas têm **pesos/custos diferentes** (ex: tempo em minutos, distância em km).
