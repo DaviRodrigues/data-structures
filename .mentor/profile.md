@@ -25,11 +25,27 @@
 | **Módulo 2** | Cap. 4: Quicksort & D&C           |     ✅ Concluído     | Dividir para Conquistar, escolha do pivô, ordenação _in-place_    |
 | **Módulo 2** | Cap. 5: Tabelas Hash              |     ✅ Concluído     | Função hash, buckets, colisões, fator de carga e _Two Sum_ $O(n)$ |
 | **Módulo 3** | Cap. 6: Pesquisa em Largura (BFS) |     ✅ Concluído     | Grafos não ponderados, filas (FIFO), menor rota, $O(V + E)$       |
-| **Módulo 3** | Cap. 7: Algoritmo de Dijkstra     | ⏳ Pronto p/ iniciar | Grafos ponderados, tabelas de custo e menor caminho               |
+| **Módulo 3** | Cap. 7: Algoritmo de Dijkstra     |     ✅ Concluído     | Grafos ponderados, tabelas de custo, pais e menor caminho         |
+| **Módulo 4** | Cap. 8: Algoritmos Gulosos (Greedy) | ⏳ Pronto p/ iniciar | Problema da cobertura, aproximações e NP-Completos                |
+| **Módulo 4** | Cap. 9: Programação Dinâmica (DP)  | ⏳ Pronto p/ iniciar | Problema da mochila 0/1, matrizes e subproblemas ótimos           |
 
 ---
 
 ## 📝 Diário de Bordo / Registro de Sessões
+
+### 📅 Sessão: Módulo 3 - Capítulo 7 (Algoritmo de Dijkstra)
+
+- **Conceitos & Intuição:**
+  - Diferença entre menor caminho por saltos (BFS) e menor caminho por custo total acumulado (Dijkstra).
+  - Estruturação das 3 tabelas essenciais: `grafo` (adjacências ponderadas), `custos` e `pais`.
+  - Compreensão da limitação com pesos negativos (onde a abordagem gulosa falha, exigindo Bellman-Ford).
+- **Exercícios & Análise Prática:**
+  - **Exercício 1 & 2 (Teóricos):** Domínio completo da mecânica gulosa do Dijkstra, suas limitações com pesos negativos e critérios de escolha entre BFS e Dijkstra.
+  - **Exercício 3 (Código - Calculadora de Frete):**
+    - Implementou perfeitamente o algoritmo de Dijkstra dinâmico com reconstrução reversa da rota através da tabela de pais.
+    - **Olhar Crítico de Engenheiro:** Identificou com precisão matemática que a rota direta `SaoPaulo -> Campinas -> RibeiraoPreto` ($40 + 120 = 160$) era mais barata do que passar por `SaoCarlos` ($40 + 90 + 40 = 170$), provando a corretude do seu algoritmo frente ao gabarito do enunciado.
+
+---
 
 ### 📅 Sessão: Módulo 3 - Capítulo 6 (Grafos e Pesquisa em Largura - BFS)
 
