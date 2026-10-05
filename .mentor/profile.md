@@ -24,8 +24,7 @@
 | **Módulo 1** | Cap. 3: Recursão                  |     ✅ Concluído     | Caso-base, caso recursivo, _Call Stack_                           |
 | **Módulo 2** | Cap. 4: Quicksort & D&C           |     ✅ Concluído     | Dividir para Conquistar, escolha do pivô, ordenação _in-place_    |
 | **Módulo 2** | Cap. 5: Tabelas Hash              |     ✅ Concluído     | Função hash, buckets, colisões, fator de carga e _Two Sum_ $O(n)$ |
-| **Módulo 3** | Cap. 6: Pesquisa em Largura (BFS) | ⏳ Pronto p/ iniciar | Grafos não ponderados, filas (FIFO), menor rota                   |
-| **Módulo 3** | Cap. 6: Pesquisa em Largura (BFS) | 🔄 Em Andamento      | Grafos não ponderados, filas (FIFO), menor rota, $O(V + E)$       |
+| **Módulo 3** | Cap. 6: Pesquisa em Largura (BFS) |     ✅ Concluído     | Grafos não ponderados, filas (FIFO), menor rota, $O(V + E)$       |
 | **Módulo 3** | Cap. 7: Algoritmo de Dijkstra     | ⏳ Pronto p/ iniciar | Grafos ponderados, tabelas de custo e menor caminho               |
 
 ---
@@ -38,9 +37,11 @@
   - Modelação de Grafos direcionados e não-direcionados utilizando Dicionários / Tabelas Hash (Listas de Adjacência).
   - Uso de Fila FIFO (`collections.deque`) para garantir a exploração em camadas de proximidade (1º grau, 2º grau, etc.) e encontrar o menor caminho em número de arestas.
   - Prevenção de ciclos e loops infinitos usando conjunto (`set`) de visitados com checagem em $O(1)$.
-- **Análise Crítica do Estudante:**
-  - **Percepção de Complexidade $O(V + E)$:** Notou corretamente que, apesar de existirem dois loops (o `while` que consome a fila e o `for` que itera sobre os vizinhos), a complexidade **não** é multiplicativa $O(n^2)$. Como o conjunto de visitados impede repetições, cada nó é processado uma vez e cada aresta é percorrida uma vez, resultando na soma linear de vértices e arestas $O(V + E)$.
-  - **Evolução em Ferramentas:** Utilização ativa do depurador (_debugger_) para inspecionar o estado da fila, caminhos e variáveis a cada iteração do algoritmo.
+- **Exercícios & Análise Prática:**
+  - **Exercício 1 & 2 (Teóricos):** Domínio das diferenças entre FIFO e LIFO (destacando que Pilha/DFS perde a garantia de menor caminho) e formalização do custo assintótico $O(V + E)$ e espaço $O(V)$.
+  - **Exercício 3 (Código - Distância Mínima):**
+    - Implementou perfeitamente o BFS com rastreamento de distância via tuplas `(no, distancia)` na fila.
+    - **Insight de Programação Defensiva:** Observou que validações prévias como `if inicio not in grafo or destino not in grafo` em $O(1)$ evitam percorrer o grafo inteiro desnecessariamente em casos inalcançáveis antes de disparar o $O(V + E)$.
 
 ---
 
